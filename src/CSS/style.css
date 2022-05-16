@@ -6,6 +6,8 @@ nav{
     width: 100%;
     height: 48px;
     background: #344051;
+    position: fixed;
+    z-index: 1;
 }
 
 .logo{
@@ -14,6 +16,9 @@ nav{
     line-height: 48px;
     padding-left: 304px;
     float: left;
+    animation: coming 2s ease;
+    -webkit-animation: coming 2s ease;
+    -o-animation: coming 2s ease;
 }
 
 .menu{
@@ -28,20 +33,126 @@ nav{
     margin-right: 29px;
     font-size: 13px;
     text-transform: uppercase;
+    animation: topshift 0.4s ease forwards;
+    -webkit-animation: topshift 0.4s ease forwards;
+    -o-animation: topshift 0.4s ease forwards;
+    opacity: 0;
 }
+
+.menu li a{
+    transition: all 0.1s;
+    color: white;
+    transform: scale(1);
+    display: inline-block;
+}
+
+.menu li a:visited{
+    color: white;
+}
+
+.menu li a:hover{
+    color: #ef8800;
+
+}
+
+.menu li a:active{
+    transform: scale(1.1);
+}
+
+
 
 #section1{
     width: 100%;
     height: 840px;
     background:url(../img/section1man.png) 90% 100% no-repeat, url(../img/section1backround.png); 
-    padding: 340px 0 0 315px;
+    padding: 340px 0 0 0;
 }
 
 #section1content{
     width: 438px;
     color: #233038;
     text-align: center;
+    margin-left: 315px;
+    animation: titlemove 1s;
 }
+
+#section1content input{
+    transition: all 0.2s;
+    transform: scale(1);
+
+}
+
+#section1content input:hover{
+    background-color: #344051;
+    color: white;
+}
+
+#section1content input:active{
+    transform: scale(1.1);
+}
+
+
+
+
+
+@keyframes coming{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes topshift{
+    from{
+        opacity: 0;
+        margin-top: -80px;
+    }
+
+    to{
+        opacity: 1;
+        margin-top: 0px;
+    }
+}
+
+@keyframes titlemove{
+    from{
+        opacity: 0;
+        margin-left: -500px;
+    }
+
+    to{
+        opacity: 1;
+        margin-left: 315px;
+    }
+}
+
+
+
+
+
+.menu li:nth-child(2){
+    animation-delay: 0.2s;
+}
+
+.menu li:nth-child(3){
+    animation-delay: 0.4s;
+}
+
+.menu li:nth-child(4){
+    animation-delay: 0.6s;
+}
+
+.menu li:nth-child(5){
+    animation-delay: 0.8s;
+}
+
+.menu li:nth-child(6){
+    animation-delay: 1s;
+}
+
+
 
 h1{
     font-size: 45px;
@@ -73,7 +184,23 @@ h4{
     width: 577px;
     margin: 85px auto 0 auto;
     color: #1d2b33;
+    animation: moving 2s ease;
 }
+
+@keyframes moving{
+    0%{
+        transform: translate(-500px);
+    }
+    100%{
+        transform: translate(0px);
+    }
+}
+
+
+
+
+
+
 
 .hrorange{
     height: 4px;
@@ -91,6 +218,7 @@ h2{
     font-size: 30px;
     font-weight: bold;
     text-align: center;
+    animation: coming 1s;
 }
 
 .section2text{
@@ -107,16 +235,39 @@ h2{
     background-image: url(../img/downloadbutton.png);
     background-repeat: no-repeat;
     background-position: 5% 50%;
+    transform: scale(1);
+    transition: all 0.1s;
+
 }
+
+#section2btn:hover{
+    background-color: #344051;
+    color: white;
+}
+
+#section2btn:active{
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+
 
 #section3{
     width: 100%;
-    height: 413px;
+    min-height: 413px;
     background-image: url(../img/section3background.jpg);
     background-size: cover;
     text-align: center;
     padding-top: 83px;
     color: #1c293c;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #section3hr{
@@ -193,10 +344,24 @@ h2{
     background-color: #17ae90;
     color: #fff;
     padding: 11px 34px;
+    transform: scale(1);
+    transition: 0.1s;
+    display: block;
 }
 
+#section4a:hover{
+    background-color: #1b7f6b;
+}
+
+#section4a:active{
+    transform: scale(1.1);
+}
+
+
+
+
 #section4adiv{
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 #section4column2{
@@ -247,6 +412,13 @@ h2{
     margin: 0px 0px 19px 0px;
 }
 
+.section41select:hover{
+    background: rgb(215, 215, 215);
+}
+
+
+
+
 #section41content{
     margin: auto;
     width: 720px;
@@ -278,8 +450,8 @@ h2{
 #section5{
     width: 100%;
     height: 395px;
-    background-image: url(../img/section5background.jpg);
-    background-size: cover;
+    background: url(../img/section5background.jpg);
+    background-attachment: fixed;
     padding: 80px 0px;
     text-align: center;
     color: #1c293c;
@@ -321,7 +493,12 @@ h2{
 .section6item{
     width: 600px;
     margin: auto;
+    animation: moving 1s ease;
 }
+
+
+
+
 
 #section6hr{
     margin: 26px auto 45px auto;
@@ -384,6 +561,7 @@ h2{
     
 }
 
+
 .section7form{
     width: 590px;
     margin: auto;
@@ -395,7 +573,9 @@ h2{
     padding: 0px 11px;
     background-color: rgb(255, 255, 255, 0.8);
     font-weight: bold;
-    font-size: 13px
+    font-size: 13px;
+    transition: all 0.1s;
+
 }
 
 #section7formemail{
@@ -405,7 +585,8 @@ h2{
     margin-left: 20px;
     background-color: rgb(255, 255, 255, 0.8);
     font-weight: bold;
-    font-size: 13px
+    font-size: 13px;
+    transition: all 0.1s;
 }
 
 #textarea1{
@@ -416,8 +597,24 @@ h2{
     padding: 7px 11px;
     resize: none;
     font-weight: bold;
-    font-size: 13px
+    font-size: 13px;
+    transition: all 0.1s;
+
 }
+
+#textarea1:hover{
+    background-color:rgb(255, 255, 255, 0.9)
+}
+
+#section7formemail:hover{
+    background-color: rgb(255, 255, 255, 0.9);
+}
+
+#section7formnaem:hover{
+    background-color: rgb(255, 255, 255, 0.9);
+}
+
+
 
 #section7submit{
     width: 104px;
@@ -428,7 +625,28 @@ h2{
     color: #fff;
     font-size: 15px;
     margin-bottom: 60px;
+    transform: scale(1);
+    transition: 0.1s;
 }
+
+
+
+
+
+#section7submit:hover{
+    color: #344051;
+    background-color: #fff;
+}
+
+
+#section7submit:active{
+    transform: scale(1.1);
+}
+
+
+
+
+
 
 #social{
     width: 341px;
@@ -444,6 +662,16 @@ h2{
     margin-left: 18px;
 }
 
+.section_7_social_icon:active{
+    transition: all 0.1s;
+    transform: scale(1.1);
+}
+
+
+
+
+
+
 #section8{
     width: 100%;
     height: 279px;
@@ -457,3 +685,4 @@ footer{
     padding: 33px;
     color: #fff;
 }
+
