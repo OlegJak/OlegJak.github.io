@@ -1,220 +1,58 @@
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="en">
     <head>
-        <title>My First Site</title>
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="CSS\reset.css">
-        <link rel="stylesheet" href="CSS\style.css">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Andrei Braun</title>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="js/bootstrap.js">
+        <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <div class="preloader">
-            <div class="preloader__row">
-                <div class="preloader__item"></div>
-                <div class="preloader__item"></div>
-                <div class="preloader__item"></div>
-            </div>
-        </div>
         <header>
             <nav>
-                <div class="logo">Андрей Браун</div>
-                <div class="menu">
-                    <ul>
-                        <li><a href="#">Обо мне</a></li>
-                        <li><a href="#">Услуги</a></li>
-                        <li><a href="#">Кейсы</a></li>
-                        <li><a href="#">Прайс</a></li>
-                        <li><a href="#">Отзывы</a></li>
-                        <li><a href="#">Контакты</a></li>
-                    </ul>
+                <div class="container">
+                    <div class="row ">
+
+                        <div class="col-xl-2 col-lg-3 col-md-3 col-sm-4 col-xs-6
+                            nav__logo py-2">Андрей Браун</div>
+
+
+                        <ul class=" col-xl-6 col-lg-7 col-md-8
+                            offset-xl-4 offset-lg-2 offset-md-1 offset-sm-0
+                            d-sm-none d-md-flex justify-content-around py-3">
+                            <li class="nav__links"><a href="#">Обо мне</a></li>
+                            <li class="nav__links"><a href="#">Услуги</a></li>
+                            <li class="nav__links"><a href="#">Кейсы</a></li>
+                            <li class="nav__links"><a href="#">Прайс</a></li>
+                            <li class="nav__links"><a href="#">Отзывы</a></li>
+                            <li class="nav__links"><a href="#">Контакты</a></li>
+                        </ul>
+
+
+                        <div class="dropdown d-md-none col-sm-block
+                                    col-sm-4 col-xs-6
+                                    offset-sm-4
+                                    py-2">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+                                Dropdown
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                <li><button class="dropdown-item" type="button">Action</button></li>
+                                <li><button class="dropdown-item" type="button">Another action</button></li>
+                                <li><button class="dropdown-item" type="button">Something else here</button></li>
+                            </ul>
+                        </div>
+
+
+
+
+                    </div>
                 </div>
             </nav>
         </header>
-        <main>
-            <section id="section1">
-                <div id="section1content">
-                    <h1>Привет <br>Я Андрей Браун</h1>
-                    <h4>Фулл стек веб-разработчик</h4>
-                    <input type="button" value="Обо мне" class="btn">
-                    <input type="button" value="мои работы" class="btn">
-                </div>
-            </section>
-
-            <section id="section2">
-                <div id="section2content">
-                    <h2>ОБО МНЕ</h2>
-                    <hr class="hrorange" id="section2hr">
-                    <div class="section2img"><img src="img/section2img.png" alt="Adndrei Broun" class="img2"></div>
-                    <p class="section2text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id harum ducimus quis velit consectetur provident maiores aspernatur voluptas officiis ipsa!</p>
-                    <p class="section2text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat iure impedit quis quos aliquam officiis, corporis sint recusandae. Nemo, vitae?</p>
-                    <input type="submit" value="Скачать резюме" id="section2btn">
-                </div>
-            </section>
-
-            <section id="section3">
-                <h2 id="section3h2">ЧТО Я УМЕЮ</h2>
-                <hr class="hrorange" id="section3hr">
-                <div class="section3container">
-                    <div class="section3item">
-                        <div class="icon"><img src="img/laptop.png" alt="laptop" class="img3"></div>
-                        <h4 class="section3h4">Веб-дизайн</h4>
-                        <p class="section3text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, accusantium.</p>
-                    </div>
-                    <div class="section3item">
-                        <div class="icon"><img src="img/quotes.png" alt="quotes" class="img3"></div>
-                        <h4 class="section3h4">Разработка</h4>
-                        <p class="section3text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam, amet!</p>
-                    </div>
-                    <div class="section3item">
-                        <div class="icon"><img src="img/rocket.png" alt="rocket" class="img3"></div>
-                        <h4 class="section3h4">CEO-Оптимизация</h4>
-                        <p class="section3text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum ullam quis maiores maxime.</p>
-                    </div>
-                    <div class="section3item">
-                        <div class="icon"><img src="img/speaker.png" alt="speaker" class="img3"></div>
-                        <h4 class="section3h4">Маркетинг</h4>
-                        <p class="section3text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, cumque praesentium?</p>
-                    </div>
-                </div>
-            </section>
-
-            <section id="section4">
-                <h2 class="section4h2">Кейсы</h2>
-                <hr class="hrorange" id="section4hr">
-                <p class="podtext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum commodi reprehenderit temporibus enim error perspiciatis!</p>
-                <div class="imgsection4"><img src="img/site.jpg" alt="site" class="img4"></div>
-                <div class="section4column">
-                    <div id="section4column1">
-                        <p class="bigtext">CLIENT:</p>
-                        <p class="smalltext">Какая-то компания</p>
-                        <p class="bigtext">WEBSITE:</p>
-                        <p class="smalltext">http://somedomain.com</p>
-                        <div id="section4adiv"><a href="#" id="section4a">VISIT LIVE SITE</a>
-                        </div>
-                    </div>    
-                    <div id="section4column2">
-                        <h3 id="section4h3">Название проекта</h3>
-                        <p class="section4text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem fugiat fugit rerum aliquid similique soluta, repellendus suscipit ipsa natus consequuntur ab reprehenderit, cupiditate voluptatum quibusdam consectetur, placeat iure sunt. Fugit ad necessitatibus ab neque hic dolorem dolor, tempora magnam repudiandae iusto culpa sint deserunt saepe voluptatem tenetur deleniti, nam expedita?</p>
-                    </div>
-                </div>
-            </section>
-            <section id="section41">
-                <div id="section41content">
-                    <p id="raschet">Расчет стоимости</p>
-                    <label for="tip" class="lab">ТИП САЙТА</label><br>
-                    <select name="select1" id="tip" class="section41select">
-                        <option value="opt1">Выберите пункт...</option>
-                        <option value="opt2">Option 1</option>
-                    </select><br>
-                    <label for="disain"  class="lab">ДИЗАЙН</label><br>
-                    <select name="select2" id="disain" class="section41select">
-                        <option value="opt1">Выберите пункт...</option>
-                        <option value="opt2">Option 1</option>
-                    </select><br>
-                    <label for="adapt"  class="lab">АДАПТИВНОСТЬ</label><br>
-                    <select name="select3" id="adapt" class="section41select">
-                        <option value="opt1">Выберите пункт...</option>
-                        <option value="opt2">Option 1</option>
-                    </select>
-                    <hr class="hrtel">
-                    <table id="section41table">
-                        <tr id="section41tr">
-                            <td>Сроки</td>
-                            <td class="space"></td>
-                            <td  class="section41price">0</td>
-                        </tr>
-                        <tr id="spacetr">
-                            <td></td>
-                        </tr>
-                        <tr id="section41tr">
-                            <td>Стоимость</td>
-                            <td class="space"></td>
-                            <td class="section41price">0</td>
-                        </tr>
-                    </table>
-                </div>
-            </section>
-            
-            <section id="section5">
-                <h2>Немного статистики</h2>
-                <hr class="hrorange" id="section5hr">
-                <div class="section5container">
-                    <div class="section5item">
-                        <div class="section5img"><img src="img/face.png" alt="face" class="img5"></div>
-                        <p class="number">120</p>
-                        <p class="section5text">СЧАСТЛИВЫХ КЛИЕНТОВ</p>
-                    </div>
-                    <div class="section5item">
-                        <div class="section5img"><img src="img/quotesorange.png" alt="quotes" class="img5"></div>
-                        <p class="number">4,600</p>
-                        <p class="section5text">ЧАСОВ РАБОТЫ</p>
-                    </div>
-                    <div class="section5item">
-                        <div class="section5img"><img src="img/table.png" alt="table" class="img5"></div>
-                        <p class="number">340</p>
-                        <p class="section5text">ПРОЕКТОВ ЗАВЕРШЕНО</p>
-                    </div>
-                    <div class="section5item">
-                        <div class="section5img"><img src="img/prize.png" alt="prize" class="img5"></div>
-                        <p class="number">23</p>
-                        <p class="section5text">НАГРАД ПОЛУЧЕНО</p>
-                    </div>
-                </div>
-            </section>
-
-            <section id="section6">
-                <div class="section6item">
-                    <h2>Отзывы</h2>
-                    <hr class="hrorange" id="section6hr">
-                    <div class="section6img"><img src="img/facesection6.png" alt="face" class="img6"></div>
-                    <p class="section6text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis minus nobis debitis inventore laborum accusantium tenetur est facere corrupti minima?</p>
-                    <p class="section6text"><span class="bold">Михаил</span>, Ген директор ПАО "Газпром".</p>
-                </div>
-            </section>
-
-            <section id="section7">
-                <h2 id="section7h2">МОИ КОНТАКТЫ</h2>
-                <hr class="hrorange" id="section7hr">
-                <p class="podtext" id="section7p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit, ut! Quas distinctio laudantium repellendus quae.</p>
-                <div class="section7container">
-                    <div class="section7item">
-                        <div class="section7img"><img src="img/location.png" alt="location"></div>
-                        <p class="section7itemtext">Санкт-Петербург<br>Невский проспект 11</p>
-                    </div>
-                    <div class="section7item">
-                        <div class="section7img"><img src="img/email.png" alt="mail"></div>
-                        <p class="section7itemtext">info@companyname.com</p>
-                    </div>
-                    <div class="section7item">
-                        <div class="section7img"><img src="img/phone.png" alt="phone"></div>
-                        <p class="section7itemtext">+7 999 999-99-99</p>
-                    </div>
-                </div>
-                <p class="section7text">ОСТАВЬТЕ МНЕ СООБЩЕНИЕ</p>
-                <div class="section7form">
-                    <input type="text" placeholder="Имя" id="section7formnaem" class="section_7_input_class">
-                    <input type="text" placeholder="Email" id="section7formemail" class="section_7_input_class">
-                </div>
-                <textarea name="textarea" id="textarea1" cols="50" rows="10" placeholder="Сообщение" class="section_7_input_class"></textarea><br>
-                <input type="submit" value="Отправить" id="section7submit">
-                <ul id="social">
-                    <li><a href=""><img src="img/facebook.png" alt="facebook" class="section_7_social_icon"></a></li>
-                    <li><a href=""><img src="img/twitter.png" alt="twitter" class="section_7_social_icon"></a></li>
-                    <li><a href=""><img src="img/ball.png" alt="Mach" class="section_7_social_icon"></a></li>
-                    <li><a href=""><img src="img/github.png" alt="github" class="section_7_social_icon"></a></li>
-                    <li><a href=""><img src="img/inst.png" alt="instagram" class="section_7_social_icon"></a></li>
-                    <li><a href=""><img src="img/linkedin.png" alt="LinkedIn" class="section_7_social_icon"></a></li>
-                </ul>
-            </section>
-
-            <section id="section8">
-
-            </section>    
-        </main>
-
-        <footer>
-            <p class="footertext">Copyright &copy; 2021 Андрей Браун. Design by Web</p>
-        </footer>
-</body>
-
+    <script src="js/bootstrap.bundle.js"></script>
+    </body>
 </html>
-
