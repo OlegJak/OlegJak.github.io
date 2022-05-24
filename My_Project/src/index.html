@@ -7,22 +7,18 @@
         <title>Andrei Braun</title>
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/bootstrap.css">
-        <link rel="stylesheet" href="js/bootstrap.js">
+        <link rel="stylesheet" href="css/all.css">
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
         <header>
             <nav>
                 <div class="container">
-                    <div class="row ">
-
-                        <div class="col-xl-2 col-lg-3 col-md-3 col-sm-4 col-xs-6
+                    <div class="row nav__row justify-content-between">
+                        <div class="col-auto
                             nav__logo py-2">Андрей Браун</div>
-
-
-                        <ul class=" col-xl-6 col-lg-7 col-md-8
-                            offset-xl-4 offset-lg-2 offset-md-1 offset-sm-0
-                            d-sm-none d-md-flex justify-content-around py-3">
+                        <ul class="col-lg-6 col-md-8                          
+                            d-none d-md-flex justify-content-around py-3">
                             <li class="nav__links"><a href="#">Обо мне</a></li>
                             <li class="nav__links"><a href="#">Услуги</a></li>
                             <li class="nav__links"><a href="#">Кейсы</a></li>
@@ -30,29 +26,58 @@
                             <li class="nav__links"><a href="#">Отзывы</a></li>
                             <li class="nav__links"><a href="#">Контакты</a></li>
                         </ul>
-
-
                         <div class="dropdown d-md-none col-sm-block
-                                    col-sm-4 col-xs-6
-                                    offset-sm-4
-                                    py-2">
-                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
-                                Dropdown
+                                    col-auto                                    
+                                    py-2
+                                    text-end">
+                            <button class="btn btn-warning nav__button" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-solid fa-bars"></i>
                             </button>
                             <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                                <li><button class="dropdown-item" type="button">Action</button></li>
-                                <li><button class="dropdown-item" type="button">Another action</button></li>
-                                <li><button class="dropdown-item" type="button">Something else here</button></li>
+                                <li><button class="dropdown-item" type="button">Обо мне</button></li>
+                                <li><button class="dropdown-item" type="button">Услуги</button></li>
+                                <li><button class="dropdown-item" type="button">Кейсы</button></li>
+                                <li><button class="dropdown-item" type="button">Прайс</button></li>
+                                <li><button class="dropdown-item" type="button">Отзывы</button></li>
+                                <li><button class="dropdown-item" type="button">Контакты</button></li>
                             </ul>
                         </div>
-
-
-
-
                     </div>
                 </div>
             </nav>
         </header>
+
+
+        <main>
+            <section id="section__1">
+                <div id="section__1__content">
+                    <div class="container-fluid">
+
+                        <div class="row">
+                            <div class="col-xl-3 offset-lg-2 text-center"><h1>Привет <br>Я Андрей Браун</h1></div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-xl-3 offset-lg-2 text-center"><h4>Фулл стек веб-разработчик</h4></div>
+                        </div>
+
+                        <div class="row">
+                            <input type="button" value="Обо мне" class="btn">
+                            <input type="button" value="мои работы" class="btn">
+                        </div>
+
+                    </div>
+                </div>
+
+            </section>
+        </main>
+
+
+
+
+
+
+
     <script src="js/bootstrap.bundle.js"></script>
     </body>
 </html>
